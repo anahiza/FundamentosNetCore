@@ -1,14 +1,6 @@
 {
-  "ProjectFilePath": "c:\\Users\\anahi.zentella\\source\\Curso Net Core\\Curso Net Core.csproj",
+  "ProjectFilePath": "/home/anahi/Documents/Git/FundamentosNetCore/Curso Net Core.csproj",
   "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
-  "Configuration": {
-    "ConfigurationName": "MVC-2.1",
-    "LanguageVersion": "2.1",
-    "Extensions": [
-      {
-        "ExtensionName": "MVC-2.1"
-      }
-    ]
-  }
+  "Configuration": null
 }
