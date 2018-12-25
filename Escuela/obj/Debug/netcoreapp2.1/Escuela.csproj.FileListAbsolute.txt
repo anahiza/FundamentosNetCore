@@ -1,0 +1,11 @@
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\bin\Debug\netcoreapp2.1\Escuela.deps.json
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\bin\Debug\netcoreapp2.1\Escuela.runtimeconfig.json
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\bin\Debug\netcoreapp2.1\Escuela.runtimeconfig.dev.json
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\bin\Debug\netcoreapp2.1\Escuela.dll
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\bin\Debug\netcoreapp2.1\Escuela.pdb
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\obj\Debug\netcoreapp2.1\Escuela.csprojAssemblyReference.cache
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\obj\Debug\netcoreapp2.1\Escuela.csproj.CoreCompileInputs.cache
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\obj\Debug\netcoreapp2.1\Escuela.AssemblyInfoInputs.cache
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\obj\Debug\netcoreapp2.1\Escuela.AssemblyInfo.cs
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\obj\Debug\netcoreapp2.1\Escuela.dll
+C:\Users\anahi.zentella\source\Curso Net Core\Escuela\obj\Debug\netcoreapp2.1\Escuela.pdb
