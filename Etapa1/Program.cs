@@ -43,7 +43,18 @@ namespace Etapa1
             };
 
             escuela1.cursos.AddRange(otraColeccion);
-            ImprimirCursos(escuela1);           
+            Curso tmp = new Curso(){Nombre="101 Curso Vacacional", jornada=TiposJornada.Nocturno};
+            escuela1.cursos.Add(tmp);
+            ImprimirCursos(escuela1);    
+            Predicate<Curso> miAlgoritmo = Predicado;
+            escuela1.cursos.RemoveAll(Predicado);
+            escuela1.cursos.Remove(tmp);
+            ImprimirCursos(escuela1);
+        }
+
+        private static bool Predicado(Curso obj)
+        {
+            return obj.Nombre=="301";
         }
 
         private static void ImprimirCursos(Escuela e)
