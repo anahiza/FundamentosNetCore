@@ -12,7 +12,7 @@ namespace CoreEscuela
 
         public void Inicializar(){
             escuela = new Escuela("Platzi School", 2012, TiposEscuela.Preescolar, pais: "Colombia");
-
+        
             escuela.cursos = new List<Curso>(){
                 new Curso(){ Nombre = "101",jornada = TiposJornada.Matutino },
                 new Curso(){ Nombre = "201", jornada = TiposJornada.Matutino },
