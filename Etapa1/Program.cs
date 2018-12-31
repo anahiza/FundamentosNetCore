@@ -14,7 +14,7 @@ namespace CoreEscuela
             engine.Inicializar();
             Printer.DibujarTitulo("Bienvenidos a la escuela");
             ImprimirCursos(engine.escuela);
-            Printer.Beep_(10000,3,10);
+            
             
         }
 

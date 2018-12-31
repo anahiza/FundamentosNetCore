@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using CoreEscuela.Entidades;
+using CoreEscuela.Util;
+
 namespace CoreEscuela
 {
     public class EscuelaEngine
@@ -20,12 +22,40 @@ namespace CoreEscuela
             CargarAsignaturas();
           
             CargarEvaluaciones();
+            Printer.ImprimirInformacionEscuela(escuela);
         }
 
         private void CargarEvaluaciones()
         {
-            throw new NotImplementedException();
+            foreach (var c in escuela.cursos)
+            {
+                foreach(var a in c.Alumnos)
+                {
+                    foreach(var m in c.Asignaturas)
+                    {
+                        var listaEvaluaciones = new List<Evaluaciones>();
+                        for(var i=0; i<5; i++)
+                        {
+                            Evaluaciones e = new Evaluaciones{ Alumno=a, Asignatura=m, Nombre = $"{i+1}.{c.Nombre} - {m.Nombre}", Nota=GenerarNotaAleatoria() };
+                            listaEvaluaciones.Add(e);
+                        }
+                        m.Evaluaciones=listaEvaluaciones;
+                        
+                    }
+                }
+            }
         }
+
+        private float GenerarNotaAleatoria()
+        {
+            float nota;
+            Random rnd = new Random();
+            nota = (float) new Random().NextDouble() * 5;
+
+            return nota;
+            
+        }
+    
 
         private void CargarAsignaturas()
         {
@@ -49,7 +79,7 @@ namespace CoreEscuela
             var listaAlumnos = from n1 in nombre1
                                 from n2 in nombre2
                                 from a1 in apellido1
-                                select new Alumno{Nombre=$"(n1) (n2) (a1)"};
+                                select new Alumno{Nombre=$"{n1} {n2} {a1}"};
             return listaAlumnos.OrderBy((a1)=> a1.UniqueId ).Take(cantidad).ToList();
         }
 
@@ -60,8 +90,8 @@ namespace CoreEscuela
                 new Curso(){ Nombre = "201", jornada = TiposJornada.Matutino },
                 new Curso(){ Nombre = "301", jornada = TiposJornada.Matutino },
                 new Curso(){ Nombre="342", jornada= TiposJornada.Vespertino },
-                new Curso(){ Nombre="483", jornada= TiposJornada.Vespertino },
-                new Curso(){Nombre="101 Curso Vacacional", jornada=TiposJornada.Nocturno}
+                new Curso(){ Nombre="483", jornada= TiposJornada.Vespertino }
+               
             };
 
             Random rnd = new Random();
@@ -71,6 +101,7 @@ namespace CoreEscuela
                 int cantidad = rnd.Next(5,20);
                 c.Alumnos=GenerarAlumnosalAzar(cantidad);
             }
+           
         }
     }
 }

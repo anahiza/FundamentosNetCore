@@ -1,4 +1,7 @@
-﻿using static System.Console;
+﻿using System;
+using System.Collections.Generic;
+using CoreEscuela.Entidades;
+using static System.Console;
 
 namespace CoreEscuela.Util
 {
@@ -21,6 +24,42 @@ namespace CoreEscuela.Util
             while(cantidad-- > 0)
             {
                 System.Console.Beep(hertz,time);
+            }
+        }
+
+        internal static void ImprimirInformacionEscuela(Escuela escuela)
+        {
+            DibujarTitulo(escuela.Nombre);
+            WriteLine($"{escuela.AñoCreacion}, {escuela.Ciudad}, {escuela.Pais}");
+            foreach(var c in escuela.cursos)
+            {
+                WriteLine($"{c.Nombre} - {c.id}");
+                foreach(var a in c.Alumnos)
+                {
+                    WriteLine($"{a.Nombre} - {a.UniqueId}");
+                    foreach(var m in c.Asignaturas)
+                    {
+                        WriteLine($"{m.Nombre}");
+                        foreach(var e in m.Evaluaciones)
+                        {
+                                WriteLine($"{e.Nombre}: {e.Nota} {e.Alumno.UniqueId}");
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        public static void ImprimirAlumnosCurso(List<Curso> cursos)
+        {
+            foreach (var c in cursos)
+            {
+                WriteLine($"Curso: {c.Nombre} - {c.id}");
+                foreach( var a in c.Alumnos)
+                {
+                    WriteLine($"{a.UniqueId} - {a.Nombre}");
+                }
+                WriteLine("---");
             }
         }
     }
