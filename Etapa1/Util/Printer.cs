@@ -38,14 +38,20 @@ namespace CoreEscuela.Util
                 {
                     WriteLine($"{a.Nombre} - {a.UniqueId}");
                     foreach(var m in c.Asignaturas)
-                    {
+                    {                        
                         WriteLine($"{m.Nombre}");
+                        float promedio = 0;
                         foreach(var e in m.Evaluaciones)
                         {
-                                WriteLine($"{e.Nombre}: {e.Nota} {e.Alumno.UniqueId}");
-                            
+                            if(e.Alumno.UniqueId==a.UniqueId){
+                                WriteLine($"{e.Nombre}: {e.Nota}");
+                                promedio+=e.Nota;
+                            }    
                         }
+                        promedio=promedio/5;                        
+                        WriteLine($"Promedio: {promedio}");
                     }
+                    DibujarLinea(50);
                 }
             }
         }

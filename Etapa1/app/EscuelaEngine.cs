@@ -22,24 +22,25 @@ namespace CoreEscuela
             CargarAsignaturas();
           
             CargarEvaluaciones();
-            Printer.ImprimirInformacionEscuela(escuela);
+            
         }
 
         private void CargarEvaluaciones()
         {
             foreach (var c in escuela.cursos)
             {
-                foreach(var a in c.Alumnos)
+                foreach(var m in c.Asignaturas)
                 {
-                    foreach(var m in c.Asignaturas)
+                    m.Evaluaciones=new List<Evaluaciones>();
+                    foreach(var a in c.Alumnos)
                     {
                         var listaEvaluaciones = new List<Evaluaciones>();
                         for(var i=0; i<5; i++)
                         {
-                            Evaluaciones e = new Evaluaciones{ Alumno=a, Asignatura=m, Nombre = $"{i+1}.{c.Nombre} - {m.Nombre}", Nota=GenerarNotaAleatoria() };
+                            Evaluaciones e = new Evaluaciones{ Alumno=a, Asignatura=m, Nombre = $"{i+1}.{m.Nombre}", Nota=GenerarNotaAleatoria() };
                             listaEvaluaciones.Add(e);
                         }
-                        m.Evaluaciones=listaEvaluaciones;
+                        m.Evaluaciones.AddRange(listaEvaluaciones);
                         
                     }
                 }
@@ -50,7 +51,7 @@ namespace CoreEscuela
         {
             float nota;
             Random rnd = new Random();
-            nota = (float) new Random().NextDouble() * 5;
+            nota = (float) new Random().NextDouble() * 10;
 
             return nota;
             
