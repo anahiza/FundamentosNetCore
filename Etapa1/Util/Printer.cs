@@ -44,7 +44,7 @@ namespace CoreEscuela.Util
                         foreach(var e in m.Evaluaciones)
                         {
                             if(e.Alumno.UniqueId==a.UniqueId){
-                                WriteLine($"{e.Nombre}: {e.Nota}");
+                                Write($"{e.Nota} | ");
                                 promedio+=e.Nota;
                             }    
                         }

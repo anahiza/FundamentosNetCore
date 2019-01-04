@@ -31,17 +31,17 @@ namespace CoreEscuela
             {
                 foreach(var m in c.Asignaturas)
                 {
-                    m.Evaluaciones=new List<Evaluaciones>();
+                    m.Evaluaciones=new List<Evaluacion>();
                     foreach(var a in c.Alumnos)
                     {
-                        var listaEvaluaciones = new List<Evaluaciones>();
+                        var listaEvaluaciones = new List<Evaluacion>();
                         for(var i=0; i<5; i++)
                         {
-                            Evaluaciones e = new Evaluaciones{ Alumno=a, Asignatura=m, Nombre = $"{i+1}.{m.Nombre}", Nota=GenerarNotaAleatoria() };
+                            Evaluacion e = new Evaluacion{ Alumno=a, Asignatura=m, Nombre = $"{i+1}.{m.Nombre}", Nota=GenerarNotaAleatoria() };
                             listaEvaluaciones.Add(e);
                         }
                         m.Evaluaciones.AddRange(listaEvaluaciones);
-                        
+                        a.evaluaciones=listaEvaluaciones;
                     }
                 }
             }
