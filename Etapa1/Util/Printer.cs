@@ -33,7 +33,7 @@ namespace CoreEscuela.Util
             WriteLine($"{escuela.AñoCreacion}, {escuela.Ciudad}, {escuela.Pais}");
             foreach(var c in escuela.cursos)
             {
-                WriteLine($"{c.Nombre} - {c.id}");
+                WriteLine($"{c.Nombre} - {c.UniqueId}");
                 foreach(var a in c.Alumnos)
                 {
                     WriteLine($"{a.Nombre} - {a.UniqueId}");
@@ -60,7 +60,7 @@ namespace CoreEscuela.Util
         {
             foreach (var c in cursos)
             {
-                WriteLine($"Curso: {c.Nombre} - {c.id}");
+                WriteLine($"Curso: {c.Nombre} - {c.UniqueId}");
                 foreach( var a in c.Alumnos)
                 {
                     WriteLine($"{a.UniqueId} - {a.Nombre}");

@@ -6,7 +6,7 @@ using CoreEscuela.Util;
 
 namespace CoreEscuela
 {
-    public class EscuelaEngine
+    public sealed class EscuelaEngine
     {
         public Escuela escuela { get; set; }
         public EscuelaEngine()
