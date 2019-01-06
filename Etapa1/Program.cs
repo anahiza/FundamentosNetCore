@@ -18,9 +18,11 @@ namespace CoreEscuela
             var alumnoTest = new Alumno {Nombre="Claire UnderWood"};
             ObjetoEscuelaBase ob = alumnoTest;
             Printer.ImprimirAlumno(alumnoTest);
-           
-            Console.WriteLine($"{ob.GetType()} - {ob.UniqueId} {ob.GetHashCode()}");
-            
+
+            var evaluacion = new Evaluacion{Nombre="Evaluacion de mat", Nota=8};
+            WriteLine(evaluacion.UniqueId);
+            ob = evaluacion;
+
         }
 
         private static void ImprimirCursos(Escuela e)

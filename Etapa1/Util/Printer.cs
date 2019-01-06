@@ -30,8 +30,8 @@ namespace CoreEscuela.Util
         internal static void ImprimirAlumno(Alumno a)
         {
             Printer.DrawLine(a.Nombre.Length);
-            WriteLine($"{a.GetType()} - {a.Nombre} - {a.UniqueId}");
-            WriteLine($"{a.GetHashCode()}");
+            WriteLine($"{a.Nombre} - {a.UniqueId}");
+            WriteLine($"{a.GetType()} - {a.GetHashCode()}");
         }
 
         internal static void ImprimirInformacionEscuela(Escuela escuela)
