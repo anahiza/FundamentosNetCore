@@ -7,16 +7,16 @@ namespace CoreEscuela.Util
 {
     public static class Printer
     {
-        public static void DibujarLinea(int tam = 10){
+        public static void DrawLine(int tam = 10){
             var linea = "".PadLeft(tam,'-');
             WriteLine(linea);  
         }
 
         public static void DibujarTitulo(string titulo){
             var tamano = titulo.Length+4;
-            DibujarLinea(tamano);
+            DrawLine(tamano);
             WriteLine($"| {titulo} |");
-            DibujarLinea(tamano);
+            DrawLine(tamano);
 
         }
 
@@ -25,6 +25,13 @@ namespace CoreEscuela.Util
             {
                 System.Console.Beep(hertz,time);
             }
+        }
+
+        internal static void ImprimirAlumno(Alumno a)
+        {
+            Printer.DrawLine(a.Nombre.Length);
+            WriteLine($"{a.GetType()} - {a.Nombre} - {a.UniqueId}");
+            WriteLine($"{a.GetHashCode()}");
         }
 
         internal static void ImprimirInformacionEscuela(Escuela escuela)
@@ -51,7 +58,7 @@ namespace CoreEscuela.Util
                         promedio=promedio/5;                        
                         WriteLine($"Promedio: {promedio}");
                     }
-                    DibujarLinea(50);
+                    DrawLine(50);
                 }
             }
         }

@@ -14,7 +14,12 @@ namespace CoreEscuela
             engine.Inicializar();
             Printer.DibujarTitulo("Bienvenidos a la escuela");
             Printer.ImprimirInformacionEscuela(engine.escuela);
-            
+            Printer.DibujarTitulo("Pruebas de Polimorfismo");
+            var alumnoTest = new Alumno {Nombre="Claire UnderWood"};
+            ObjetoEscuelaBase ob = alumnoTest;
+            Printer.ImprimirAlumno(alumnoTest);
+           
+            Console.WriteLine($"{ob.GetType()} - {ob.UniqueId} {ob.GetHashCode()}");
             
         }
 
@@ -25,7 +30,7 @@ namespace CoreEscuela
             {
                 c.imprimirCurso();
             }
-            Printer.DibujarLinea(20);
+            Printer.DrawLine(20);
         }
 
        
