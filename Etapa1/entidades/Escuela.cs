@@ -34,5 +34,6 @@ namespace CoreEscuela.Entidades
         {
             return $"Nombre: \"{Nombre}\", Tipo {TipoEscuela} \nPais {Pais}, Ciudad {Ciudad}";
         }
+        
     }
 }
