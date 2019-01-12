@@ -115,12 +115,12 @@ namespace CoreEscuela
                 listaObj.AddRange(curso.Alumnos);
                 foreach (var e in curso.Asignaturas)
                 {
-                    listaObj.AddRange(e.Evaluaciones)
+                    listaObj.AddRange(e.Evaluaciones);
                 }
             }
 
 
-            return listaObj
+            return listaObj;
         }
     }
 }

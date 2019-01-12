@@ -22,6 +22,7 @@ namespace CoreEscuela
             var evaluacion = new Evaluacion{Nombre="Evaluacion de mat", Nota=8};
             WriteLine(evaluacion.UniqueId);
             ob = evaluacion;
+            var listaObjetos = engine.GetObjetoEscuelas();
 
         }
 
