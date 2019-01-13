@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using CoreEscuela.Entidades;
 using static System.Console;
 using CoreEscuela.Util;
+using System.Linq;
 
 namespace CoreEscuela
 {
@@ -14,16 +15,19 @@ namespace CoreEscuela
             engine.Inicializar();
             Printer.DibujarTitulo("Bienvenidos a la escuela");
             Printer.ImprimirInformacionEscuela(engine.escuela);
-            Printer.DibujarTitulo("Pruebas de Polimorfismo");
+
             var alumnoTest = new Alumno {Nombre="Claire UnderWood"};
             ObjetoEscuelaBase ob = alumnoTest;
-            Printer.ImprimirAlumno(alumnoTest);
+           
 
             var evaluacion = new Evaluacion{Nombre="Evaluacion de mat", Nota=8};
             WriteLine(evaluacion.UniqueId);
             ob = evaluacion;
             var listaObjetos = engine.GetObjetoEscuelas();
-
+            var listaIlugar = from obj in listaObjetos
+                            where obj is Alumno
+                            select (Alumno) obj;
+            engine.escuela.LimpiarLugar();
         }
 
         private static void ImprimirCursos(Escuela e)
