@@ -57,6 +57,8 @@ namespace CoreEscuela
             
         }
     
+#region cargas
+    
 
         private void CargarAsignaturas()
         {
@@ -104,6 +106,8 @@ namespace CoreEscuela
             }
            
         }
+
+#endregion
 
         public List<ObjetoEscuelaBase> GetObjetoEscuelas(){
             var listaObj = new List<ObjetoEscuelaBase>();
