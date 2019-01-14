@@ -109,17 +109,50 @@ namespace CoreEscuela
 
 #endregion
 
-        public List<ObjetoEscuelaBase> GetObjetoEscuelas(){
+         public List<ObjetoEscuelaBase> GetObjetoEscuelas(
+            out int conteoEvaluaciones,
+            out int conteoAlumnos,
+            out int conteoAsignaturas,
+            out int conteoCursos,
+            bool traeEvaluaciones = true,
+            bool traeAlumnos= true,
+            bool traeAsignaturas = true,
+            bool traeCursos = true)
+            {
+            conteoAlumnos=0;
+            conteoAsignaturas=0;;
+            conteoCursos=0;
+            conteoEvaluaciones=0;
             var listaObj = new List<ObjetoEscuelaBase>();
             listaObj.Add(escuela);
-            listaObj.AddRange(escuela.cursos);
+            if (traeCursos)
+            {
+                listaObj.AddRange(escuela.cursos);
+                conteoCursos+=escuela.cursos.Count();
+            }
             foreach (var curso in escuela.cursos)
             {
-                listaObj.AddRange(curso.Asignaturas);
-                listaObj.AddRange(curso.Alumnos);
-                foreach (var e in curso.Asignaturas)
+                if (traeAlumnos)
                 {
-                    listaObj.AddRange(e.Evaluaciones);
+                    listaObj.AddRange(curso.Alumnos);
+                    conteoAlumnos+=curso.Alumnos.Count();
+
+                }
+                if (traeAsignaturas)
+                {
+                    listaObj.AddRange(curso.Asignaturas);
+                    conteoAsignaturas+= curso.Asignaturas.Count();
+
+                }
+                if (traeEvaluaciones)
+                {
+                    foreach (var e in curso.Asignaturas)
+                    {
+                        
+                        listaObj.AddRange(e.Evaluaciones);
+                        conteoAsignaturas+=curso.Asignaturas.Count();
+                    }
+
                 }
             }
 
