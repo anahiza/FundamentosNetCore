@@ -109,8 +109,8 @@ namespace CoreEscuela
 
 #endregion
 
-         public List<ObjetoEscuelaBase> GetObjetoEscuelas(
-            out int conteoEvaluaciones,
+         public IReadOnlyList<ObjetoEscuelaBase> GetObjetoEscuelas(
+            out int  conteoEvaluaciones,
             out int conteoAlumnos,
             out int conteoAsignaturas,
             out int conteoCursos,
@@ -158,7 +158,7 @@ namespace CoreEscuela
         }
     
 
-    public List<ObjetoEscuelaBase> GetObjetoEscuelas(            
+    public IReadOnlyList<ObjetoEscuelaBase> GetObjetoEscuelas(            
             bool traeEvaluaciones = true,
             bool traeAlumnos= true,
             bool traeAsignaturas = true,
