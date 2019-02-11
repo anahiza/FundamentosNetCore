@@ -119,10 +119,7 @@ namespace CoreEscuela
             bool traeAsignaturas = true,
             bool traeCursos = true)
             {
-            conteoAlumnos=0;
-            conteoAsignaturas=0;;
-            conteoCursos=0;
-            conteoEvaluaciones=0;
+            conteoAlumnos = conteoAsignaturas=conteoCursos=conteoEvaluaciones=0;
             var listaObj = new List<ObjetoEscuelaBase>();
             listaObj.Add(escuela);
             if (traeCursos)
@@ -159,5 +156,18 @@ namespace CoreEscuela
 
             return listaObj;
         }
+    
+
+    public List<ObjetoEscuelaBase> GetObjetoEscuelas(            
+            bool traeEvaluaciones = true,
+            bool traeAlumnos= true,
+            bool traeAsignaturas = true,
+            bool traeCursos = true)
+            {
+                int dummy = 0;
+                return GetObjetoEscuelas(out dummy, out dummy, out dummy,out dummy , traeEvaluaciones, traeAlumnos, traeAsignaturas, traeCursos);
+
+            }
+
     }
 }
