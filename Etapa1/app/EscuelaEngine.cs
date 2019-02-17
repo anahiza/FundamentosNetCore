@@ -25,6 +25,7 @@ namespace CoreEscuela
             
         }
 
+
         private void CargarEvaluaciones()
         {
             foreach (var c in escuela.cursos)
