@@ -20,14 +20,44 @@ namespace CoreEscuela.Util
 
         }
 
-        public static void ImprimirDiccionario(Dictionary<LlaveDiccionario, IEnumerable<ObjetoEscuelaBase>> d)
+        public static void ImprimirDiccionario(Dictionary<LlaveDiccionario, IEnumerable<ObjetoEscuelaBase>> d,
+        bool eval = false, bool alum = false, bool cur = false)
         {
             foreach (var obj in d)
             {
                 DibujarTitulo(obj.Key.ToString());
                 foreach (var item in obj.Value)
                 {
-                    WriteLine($"{item}");
+                    switch (obj.Key)
+                    {
+                        case LlaveDiccionario.Alumno:                           
+                            if (eval)
+                                WriteLine($"{item}");
+                            break;
+                        case LlaveDiccionario.Evaluacion:
+                            if (eval)
+                                WriteLine($"{item}");
+                            break;
+                        case LlaveDiccionario.Escuela:
+                            WriteLine($"Escuela: {item}");
+                            break;
+                        case LlaveDiccionario.Curso:
+                            if (cur)
+                            {
+                                var cursoTemp = item as Curso;
+                                if (cursoTemp != null)
+                                {
+                                    int count = cursoTemp.Alumnos.Count;
+                                    
+                                    WriteLine($"Curso: {item.Nombre}, Total: {count}");
+                                }
+                            }
+                        break;
+                        default:
+                            WriteLine($"{item}");
+                            break;
+                    }
+                   
                 }           
 
             }

@@ -85,6 +85,7 @@ namespace CoreEscuela
             float nota;
             Random rnd = new Random();
             nota = (float) new Random().NextDouble() * 10;
+            nota = MathF.Round(nota,2);
 
             return nota;
             
