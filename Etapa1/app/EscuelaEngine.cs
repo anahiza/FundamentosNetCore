@@ -25,6 +25,18 @@ namespace CoreEscuela
             
         }
 
+        public Dictionary<LlaveDiccionario, IEnumerable<ObjetoEscuelaBase>> GetDiccionarioObjetos()
+        {
+
+            var diccionario = new Dictionary<LlaveDiccionario,  IEnumerable<ObjetoEscuelaBase>>();
+            
+            diccionario.Add(LlaveDiccionario.Escuela, new[] { escuela });
+            diccionario.Add(LlaveDiccionario.Curso, escuela.cursos.Cast<ObjetoEscuelaBase>());
+            
+            return diccionario;
+
+        }
+
 
         private void CargarEvaluaciones()
         {

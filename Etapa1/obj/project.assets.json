@@ -516,10 +516,11 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "TT+QCi9LcxGTjBssH7S7n5+8DVcwfG4DYgXX7Dk7+BfZ4oVHj8Q0CbYk9glzAlHLsSt3bYzol+fOdra2iu6GOw==",
+      "sha512": "aSTPL94NloSiQVL5Len8wbjFKOnoAX/vOh3s3DF6g3c7GUUMLCDvnBhmA72M2iN2AedyA8hpr7m89kzSAKUnJQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -681,28 +682,30 @@
     ]
   },
   "packageFolders": {
-    "/home/anahi/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\anahi.zentella\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/anahi/Documents/Git/FundamentosNetCore/Etapa1/Etapa1.csproj",
+      "projectUniqueName": "C:\\Users\\anahi.zentella\\source\\Curso Net Core\\Etapa1\\Etapa1.csproj",
       "projectName": "Etapa1",
-      "projectPath": "/home/anahi/Documents/Git/FundamentosNetCore/Etapa1/Etapa1.csproj",
-      "packagesPath": "/home/anahi/.nuget/packages/",
-      "outputPath": "/home/anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/",
+      "projectPath": "C:\\Users\\anahi.zentella\\source\\Curso Net Core\\Etapa1\\Etapa1.csproj",
+      "packagesPath": "C:\\Users\\anahi.zentella\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anahi.zentella\\source\\Curso Net Core\\Etapa1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/anahi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\anahi.zentella\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
