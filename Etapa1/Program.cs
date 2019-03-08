@@ -45,8 +45,10 @@ namespace CoreEscuela
             diccionario2["Luna"]="Cuerpo celeste que gira";
            
             WriteLine(diccionario2["Luna"]);
-
-            engine.GetDiccionarioObjetos();
+            Printer.DibujarTitulo("Diccionario");
+            var dic=engine.GetDiccionarioObjetos();
+            Printer.ImprimirDiccionario(dic);
+            
         }
 
         private static void ImprimirCursos(Escuela e)

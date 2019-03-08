@@ -19,8 +19,7 @@ namespace CoreEscuela
             escuela = new Escuela("Platzi School", 2012, TiposEscuela.Preescolar, pais: "Colombia");
 
             CargarCursos();
-            CargarAsignaturas();
-          
+            CargarAsignaturas();          
             CargarEvaluaciones();
             
         }

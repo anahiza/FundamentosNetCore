@@ -20,6 +20,19 @@ namespace CoreEscuela.Util
 
         }
 
+        public static void ImprimirDiccionario(Dictionary<LlaveDiccionario, IEnumerable<ObjetoEscuelaBase>> d)
+        {
+            foreach (var obj in d)
+            {
+                DibujarTitulo(obj.Key.ToString());
+                foreach (var item in obj.Value)
+                {
+                    WriteLine($"{item}");
+                }           
+
+            }
+        }
+
         public static void Beep_(int hertz = 2000, int time= 500, int cantidad = 1){
             while(cantidad-- > 0)
             {
