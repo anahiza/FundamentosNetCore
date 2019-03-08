@@ -6,7 +6,8 @@ namespace CoreEscuela.Entidades
         Alumno,
         Asignatura,
         Evaluacion,
-        Escuela
+        Escuela,
+        Evaluación
     }
 
 }

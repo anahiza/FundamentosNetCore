@@ -29,14 +29,35 @@ namespace CoreEscuela
         {
 
             var diccionario = new Dictionary<LlaveDiccionario,  IEnumerable<ObjetoEscuelaBase>>();
-            
+            var listTemp = new List<Evaluacion>();
+            var listTempAlumno = new List<Alumno>();
+            var listTempAsignatura= new List<Asignatura>();
+            (listTemp, listTempAlumno, listTempAsignatura)=InicializarDiccionario();           
             diccionario.Add(LlaveDiccionario.Escuela, new[] { escuela });
             diccionario.Add(LlaveDiccionario.Curso, escuela.cursos.Cast<ObjetoEscuelaBase>());
-            
+            diccionario.Add(LlaveDiccionario.Alumno, listTempAlumno.Cast<ObjetoEscuelaBase>());
+            diccionario.Add(LlaveDiccionario.Evaluacion, listTemp.Cast<ObjetoEscuelaBase>());
+            diccionario.Add(LlaveDiccionario.Asignatura, listTempAsignatura.Cast<ObjetoEscuelaBase>());
             return diccionario;
 
         }
 
+        private (List<Evaluacion>, List<Alumno>, List<Asignatura>) InicializarDiccionario()
+        {
+            var listTemp = new List<Evaluacion>();
+            var listTempAlumno = new List<Alumno>();
+            var listTempAsignatura= new List<Asignatura>();            
+           foreach (var c in escuela.cursos)
+           {
+               listTempAlumno.AddRange(c.Alumnos);
+               listTempAsignatura.AddRange(c.Asignaturas);
+                foreach (var a in c.Alumnos)
+                {
+                    listTemp.AddRange(a.evaluaciones);
+                }                
+           }
+        return (listTemp, listTempAlumno, listTempAsignatura);
+        }
 
         private void CargarEvaluaciones()
         {
