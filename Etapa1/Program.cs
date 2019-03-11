@@ -50,8 +50,8 @@ namespace CoreEscuela
             WriteLine(diccionario2["Luna"]);
             Printer.DibujarTitulo("Diccionario");
             var dic=engine.GetDiccionarioObjetos();
-            Printer.ImprimirDiccionario(dic,true, false,false);
-            
+            //Printer.ImprimirDiccionario(dic,true, false,false);
+            var reporteador = new Reporteador(dic);
         }
 
         private static void AccionEvento(object sender, EventArgs e)
