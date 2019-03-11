@@ -50,9 +50,9 @@ namespace CoreEscuela
            {
                listTempAlumno.AddRange(c.Alumnos);
                listTempAsignatura.AddRange(c.Asignaturas);
-                foreach (var a in c.Alumnos)
+                foreach (var a in c.Asignaturas)
                 {
-                    listTemp.AddRange(a.evaluaciones);
+                    listTemp.AddRange(a.Evaluaciones);
                 }                
            }
         return (listTemp, listTempAlumno, listTempAsignatura);

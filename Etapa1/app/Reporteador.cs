@@ -19,20 +19,34 @@ namespace CoreEscuela
             _diccionario=d;
         }
 
-        public IEnumerable<Escuela> GetListaEvaluaciones()
+        public IEnumerable<Evaluacion> GetListaEvaluaciones()
         {
-            IEnumerable <Escuela> rta;
-            if(_diccionario.TryGetValue(LlaveDiccionario.Escuela, out IEnumerable<ObjetoEscuelaBase> lista))
+            IEnumerable <Evaluacion> rta;
+            if(_diccionario.TryGetValue(LlaveDiccionario.Evaluacion, out IEnumerable<ObjetoEscuelaBase> lista))
             {
-                rta = lista.Cast<Escuela>();
+               return rta = lista.Cast<Evaluacion>();
             }
             else
             {
-                rta = null;
-            }
+               return new List<Evaluacion>();            }
           
             
-            return rta;
+            
+        }
+
+        public IEnumerable<string> GetListaAsignaturas()
+        {            
+            var listaEvaluaciones = GetListaEvaluaciones();
+            return (from ev in listaEvaluaciones                
+                select ev.Asignatura.Nombre).Distinct();  
+            
+        }
+
+        public Dictionary<string,IEnumerable<Evaluacion>> GetListaEvaluacionesporAsignatura()
+        {            
+            var dicResult = new Dictionary<string,IEnumerable<Evaluacion>>();
+            
+            return dicResult;
         }
     }
 }
