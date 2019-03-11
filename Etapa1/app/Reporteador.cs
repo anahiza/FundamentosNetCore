@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using CoreEscuela.Entidades;
+using System.Linq;
 
 namespace CoreEscuela
 
@@ -18,9 +19,20 @@ namespace CoreEscuela
             _diccionario=d;
         }
 
-        public IEnumerable<Evaluacion> GetListaEvaluaciones()
+        public IEnumerable<Escuela> GetListaEvaluaciones()
         {
-            _diccionario[LlaveDiccionario.Evaluacion];
+            IEnumerable <Escuela> rta;
+            if(_diccionario.TryGetValue(LlaveDiccionario.Escuela, out IEnumerable<ObjetoEscuelaBase> lista))
+            {
+                rta = lista.Cast<Escuela>();
+            }
+            else
+            {
+                rta = null;
+            }
+          
+            
+            return rta;
         }
     }
 }
