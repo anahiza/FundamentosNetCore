@@ -1,4 +1,4 @@
-using CoreEscuela.Entidades;
+namespace CoreEscuela.Entidades
 {
     public class AlumnoPromedio
     {

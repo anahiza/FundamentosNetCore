@@ -41,12 +41,12 @@ namespace CoreEscuela
             var listaasignaturas = reporteador.GetListaAsignaturas();
             var listaEvalxAsig =reporteador.GetListaEvaluacionesporAsignatura();
             var listaCalificaciones = reporteador.GetPromedioAlumnosporAsignatura();
-            foreach item in listaCalificaciones
+            foreach (var item in listaCalificaciones)
             {
                 foreach (var alumno in item.Value)
                 {
                     var tmp=alumno as Alumno;
-                    if (tmp)
+                    
                 }
             
             }

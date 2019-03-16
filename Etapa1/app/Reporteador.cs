@@ -76,7 +76,7 @@ namespace CoreEscuela
                                 alumnoID = grupoEvalAlumno.Key,
                                 promedio = grupoEvalAlumno.Average((evaluacion)=> evaluacion.Nota)
                                 };
-                var 
+                 
                 res.Add(asigconEval.Key,promediosAlumnos);
                 
             }
