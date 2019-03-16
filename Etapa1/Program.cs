@@ -40,6 +40,16 @@ namespace CoreEscuela
             var evallist=reporteador.GetListaEvaluaciones();
             var listaasignaturas = reporteador.GetListaAsignaturas();
             var listaEvalxAsig =reporteador.GetListaEvaluacionesporAsignatura();
+            var listaCalificaciones = reporteador.GetPromedioAlumnosporAsignatura();
+            foreach item in listaCalificaciones
+            {
+                foreach (var alumno in item.Value)
+                {
+                    var tmp=alumno as Alumno;
+                    if (tmp)
+                }
+            
+            }
         }
 
         private static void AccionEvento(object sender, EventArgs e)
