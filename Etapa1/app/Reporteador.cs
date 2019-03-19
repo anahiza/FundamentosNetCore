@@ -70,10 +70,14 @@ namespace CoreEscuela
             foreach(var asigconEval in dicEvalxAsig)
             {
                 var promediosAlumnos = from eval in asigconEval.Value
-                            group eval by eval.Alumno.UniqueId
+                            group eval by new {
+                                eval.Alumno.UniqueId,
+                                eval.Alumno.Nombre
+                            }
                             into grupoEvalAlumno                            
                             select new AlumnoPromedio {
-                                alumnoID = grupoEvalAlumno.Key,
+                                alumnoID = grupoEvalAlumno.Key.UniqueId,
+                                alumnoNombre = grupoEvalAlumno.Key.Nombre,
                                 promedio = grupoEvalAlumno.Average((evaluacion)=> evaluacion.Nota)
                                 };
                  
