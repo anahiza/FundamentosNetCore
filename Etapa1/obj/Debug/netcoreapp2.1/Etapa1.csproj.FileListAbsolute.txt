@@ -9,25 +9,25 @@
 /home/anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.AssemblyInfo.cs
 /home/anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.dll
 /home/anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.pdb
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.deps.json
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.runtimeconfig.json
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.runtimeconfig.dev.json
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.dll
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.pdb
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.csprojAssemblyReference.cache
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.csproj.CoreCompileInputs.cache
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.AssemblyInfoInputs.cache
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.AssemblyInfo.cs
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.dll
-C:\Users\anahi.zentella\source\Curso Net Core\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.pdb
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.deps.json
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.runtimeconfig.json
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.runtimeconfig.dev.json
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.dll
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\bin\Debug\netcoreapp2.1\Etapa1.pdb
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.csprojAssemblyReference.cache
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.csproj.CoreCompileInputs.cache
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.AssemblyInfoInputs.cache
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.AssemblyInfo.cs
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.dll
-D:\Users\Anahi\Documents\Git\FundamentosNetCore\Etapa1\obj\Debug\netcoreapp2.1\Etapa1.pdb
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.deps.json
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.runtimeconfig.json
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.runtimeconfig.dev.json
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.dll
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.pdb
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.csprojAssemblyReference.cache
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.csproj.CoreCompileInputs.cache
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.AssemblyInfoInputs.cache
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.AssemblyInfo.cs
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.dll
+C:/Users/anahi.zentella/source/Curso Net Core/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.pdb
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.deps.json
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.runtimeconfig.json
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.runtimeconfig.dev.json
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.dll
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/bin/Debug/netcoreapp2.1/Etapa1.pdb
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.csprojAssemblyReference.cache
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.csproj.CoreCompileInputs.cache
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.AssemblyInfoInputs.cache
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.AssemblyInfo.cs
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.dll
+D:/Users/Anahi/Documents/Git/FundamentosNetCore/Etapa1/obj/Debug/netcoreapp2.1/Etapa1.pdb

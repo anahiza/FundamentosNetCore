@@ -63,6 +63,20 @@ namespace CoreEscuela
             return dicResult;
         }
 
+        public Dictionary<string,IEnumerable<object>> GetTopNporMateria(int n)
+        {
+            var res = new Dictionary<string,IEnumerable<object>>();
+            res = GetPromedioAlumnosporAsignatura();             
+            foreach(var asig in res)
+            {
+               var topn = from alumno in asig.Value
+                        select alumno.;
+            }
+            
+return res;
+        }
+
+
         public  Dictionary<string,IEnumerable<object>> GetPromedioAlumnosporAsignatura()
         {
             var res = new Dictionary<string,IEnumerable<object>>();
